@@ -1,0 +1,37 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "kshieldauth",
+          "appId": "1:1077873090577:android:6fe89d34813f32c637d1b0",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "kshieldauth",
+          "configurations": {
+            "android": "1:1077873090577:android:6fe89d34813f32c637d1b0",
+            "web": "1:1077873090577:web:07b9e59ee6048a0337d1b0",
+            "windows": "1:1077873090577:web:e74403800363540037d1b0"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
